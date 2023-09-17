@@ -352,6 +352,8 @@ body {
 }
 
 .section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   height: 100svh;
 }
 .section__inner {
@@ -370,8 +372,21 @@ body {
   width: 50%;
 }
 
+.bg-svg {
+  display: grid;
+  place-content: center;
+}
+.bg-svg__01 {
+  transition: transform 0.8s ease-out, opacity 2s 0.3s, visibility 2s 0.3s;
+}
+.bg-svg__01.is_scale {
+  transform: scale(10);
+  opacity: 0;
+  visibility: hidden;
+}
+
 .section-about {
-  transition: background 0.5s, color 0.5s;
+  transition: background 0.8s, color 0.8s;
 }
 .section-about.is-changeColor {
   background-color: #404A72;
@@ -379,7 +394,7 @@ body {
 }
 
 .section-ex {
-  transition: background 0.5s, color 0.5s;
+  transition: background 0.8s, color 0.8s;
 }
 .section-ex.is-changeColor {
   background-color: #EB6137;
@@ -387,7 +402,7 @@ body {
 }
 
 .section-works {
-  transition: background 0.5s, color 0.5s;
+  transition: background 0.8s, color 0.8s;
 }
 .section-works.is-changeColor {
   background-color: #F8E9D1;
@@ -395,7 +410,7 @@ body {
 }
 
 .section-thanks {
-  transition: background 0.5s, color 0.5s;
+  transition: background 0.8s, color 0.8s;
 }
 .section-thanks.is-changeColor {
   background-color: #404A72;
