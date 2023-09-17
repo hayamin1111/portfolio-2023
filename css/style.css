@@ -371,29 +371,33 @@ body {
 }
 
 .section-about {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
+  transition: background 0.5s, color 0.5s;
+}
+.section-about.is-changeColor {
   background-color: #404A72;
   color: #fff;
 }
-.section-about .is-show-section {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
 
 .section-ex {
+  transition: background 0.5s, color 0.5s;
+}
+.section-ex.is-changeColor {
   background-color: #EB6137;
   color: #fff;
 }
 
 .section-works {
+  transition: background 0.5s, color 0.5s;
+}
+.section-works.is-changeColor {
   background-color: #F8E9D1;
   color: #404A72;
 }
 
 .section-thanks {
+  transition: background 0.5s, color 0.5s;
+}
+.section-thanks.is-changeColor {
   background-color: #404A72;
   color: #F8E9D1;
 }
